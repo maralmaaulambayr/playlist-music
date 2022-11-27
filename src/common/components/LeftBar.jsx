@@ -24,6 +24,7 @@ export const LeftBar = ({ children }) => {
                     <span>Your library</span></li>
             </ul>
           </div>
+          {/* <Playlists /> */}
         </div>
       </aside>
     );

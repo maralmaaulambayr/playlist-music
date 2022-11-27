@@ -10,7 +10,7 @@ export default function App() {
         <div className="grid-container">
           <LeftBar />
           <MainContent />
-          <RightBar />
+          {/* <RightBar /> */}
         </div>
       </ThemeProvider>
     </>

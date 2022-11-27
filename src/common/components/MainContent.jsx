@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Header } from "./Header";
 import { PlaylistTile } from "./PlaylistTile";
 import axios from "axios";
+import image from "../../assets/images/pop.jpg"
+import "./MainContent.css"
 
 export const MainContent = () => {
   const [data, setData] = useState([]);
@@ -20,7 +22,7 @@ export const MainContent = () => {
   const addPlaylist = async () => {
     const res = await axios.post(
       `https://6375fb74b5f0e1eb85fed196.mockapi.io/api/v1/users/9/playlists`,
-      [...data, { id: "1", songs: [], totalVote: 30, listName: "Zolboo's Emo" }]
+      [...data, { id: "15", songs: [], totalVote: 30, listName: "" }]
     );
     console.log(res);
   };
@@ -39,15 +41,42 @@ export const MainContent = () => {
         <div className="playlists-container"></div>
 
         <div className="playlists-container">
-          {data.map((playlist, index) => (
-            <PlaylistTile key={index} listName={playlist.listName} />
-          ))}
-          <button
-            onClick={addPlaylist}
-            style={{ background: "#FFFFFF", borderRadius: "40px" }}
-          >
-            Update Playlist
-          </button>
+            <div className="playlist">
+                <div className="image">
+                    <img src={image}></img>
+                </div>
+                <div className="details">
+                    <span className="type">PLAYLIST</span>
+                    <h1 className="title">Ariana Grande Mix</h1>
+                    <p className="description">Camila Cabello,Madison Beer ,Shawn Mendes  and more</p>
+                </div>
+
+            </div>
+            <div className="list">
+                <div className="header-row">
+                    <div className="col"><span></span></div>
+                </div>
+                <div className="header-row">
+                    <div className="col"><span></span></div>
+                </div>
+                <div className="header-row">
+                    <div className="col"><span></span></div>
+                </div>
+                <div className="header-row">
+                    <div className="col"><span></span></div>
+                </div>
+                <div className="tracts">
+                    {data.map((playlist, index) => (
+                    <PlaylistTile key={index} listName={playlist.listName} />
+                    ))}
+                    <button
+                    onClick={addPlaylist}
+                    style={{ background: "#FFFFFF", borderRadius: "40px" }}
+                    >
+                    Update Playlist
+                    </button> 
+                </div>
+            </div>
         </div>
       </div>
     </div>
