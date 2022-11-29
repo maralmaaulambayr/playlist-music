@@ -2,7 +2,7 @@
     margin: 0 2rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 .image img {
     height: 15rem;
@@ -17,4 +17,67 @@
 .title {
     color: white;
     font-size: 4rem;
+}
+.tracks {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+p {
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+.listname {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+.audioList {
+    padding: 10px 30px;
+}
+.songs-con {
+   width: 100%;
+}
+.songs {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #848484;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+}
+.songs:hover,
+.songs:active{
+    color: #f1f1f1;
+}
+.count {
+    margin-right: 10px;
+}
+.song {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+    padding-bottom: 5px;
+
+}
+.img-con {
+    overflow: hidden;
+}
+.song .section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.song-name {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+.spanArtist {
+    margin-left: auto;
 }

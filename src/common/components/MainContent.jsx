@@ -47,28 +47,15 @@ export const MainContent = () => {
                 </div>
                 <div className="details">
                     <span className="type">PLAYLIST</span>
-                    <h1 className="title">Ariana Grande Mix</h1>
-                    <p className="description">Camila Cabello,Madison Beer ,Shawn Mendes  and more</p>
+                    <h1 className="title">Daily Mix</h1>
+                    <p className="description"></p>
                 </div>
 
             </div>
             <div className="list">
-                <div className="header-row">
-                    <div className="col"><span></span></div>
-                </div>
-                <div className="header-row">
-                    <div className="col"><span></span></div>
-                </div>
-                <div className="header-row">
-                    <div className="col"><span></span></div>
-                </div>
-                <div className="header-row">
-                    <div className="col"><span></span></div>
-                </div>
+
                 <div className="tracts">
-                    {data.map((playlist, index) => (
-                    <PlaylistTile key={index} listName={playlist.listName} />
-                    ))}
+                    <PlaylistTile />
                     <button
                     onClick={addPlaylist}
                     style={{ background: "#FFFFFF", borderRadius: "40px" }}

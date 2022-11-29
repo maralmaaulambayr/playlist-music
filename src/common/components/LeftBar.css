@@ -13,9 +13,11 @@
 .logo {
     text-align: center;
     margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
 }
 .logo img {
-    max-inline-size: 80%;
+    max-inline-size: 40%;
     block-size: auto;
 }
 ul{
