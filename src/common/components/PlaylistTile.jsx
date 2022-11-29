@@ -2,6 +2,7 @@ import "./MainContent.css"
 import { Songs } from "./Songs";
 
 export const PlaylistTile = ({
+    image = "http://loremflickr.com/640/480",
   }) => {
     return (
       <div className="overflow-hidden flex playlist-tile-container transparent-background gap-20 audioList">
@@ -9,12 +10,12 @@ export const PlaylistTile = ({
           {Songs &&
            Songs.map((song,index)=>(
             <div className="songs" key={song.id}>
-            <div className="count">{ index+1 }</div>
+            <div className="count">{ index + 1 }</div>
             <div className="song">
               <div className="img-con">
-                <img src={song?.imgSrc} alt="" className="thumbnail-sm" />
+                <img src={image} alt="" className="thumbnail-sm" />
               </div>
-              <div className="section">
+              <div className="section" >
                 <p className="song-name">{song.songName} <span className="spanArtist">
                   {song.artist}
                 </span>

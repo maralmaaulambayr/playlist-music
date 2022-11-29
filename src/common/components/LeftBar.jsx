@@ -14,13 +14,13 @@ export const LeftBar = ({ children }) => {
             </div>
             <ul>
                 <li>
-                    <MdHomeFilled />
+                    <MdHomeFilled className="left-icon" />
                     <span>Home</span></li>
                 <li>
-                    <MdSearch />
+                    <MdSearch className="left-icon"  />
                     <span>Search</span></li>
                 <li>
-                    <IoLibrary />
+                    <IoLibrary className="left-icon"  />
                     <span>Your library</span></li>
             </ul>
           </div>

@@ -4,6 +4,9 @@ import { PlaylistTile } from "./PlaylistTile";
 import axios from "axios";
 import image from "../../assets/images/pop.jpg"
 import "./MainContent.css"
+import { FaPlayCircle } from 'react-icons/fa'
+import { FaHeart } from 'react-icons/fa'
+
 
 export const MainContent = () => {
   const [data, setData] = useState([]);
@@ -50,10 +53,19 @@ export const MainContent = () => {
                     <h1 className="title">Daily Mix</h1>
                     <p className="description"></p>
                 </div>
-
             </div>
+            <div className="btn-con">
+              <FaPlayCircle className="play-btn" />
+              <FaHeart className="fav-btn" />
+              <p className="other">...</p>
+            </div>
+            
             <div className="list">
-
+              <ul className="list-con">
+                <li><p>#</p></li>
+                <li><p>TITLE</p></li>
+                <li className="artist"><p>ARTIST</p></li>
+              </ul>
                 <div className="tracts">
                     <PlaylistTile />
                     <button

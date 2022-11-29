@@ -17,7 +17,7 @@
     justify-content: flex-start;
 }
 .logo img {
-    max-inline-size: 40%;
+    max-inline-size: 50%;
     block-size: auto;
 }
 ul{
@@ -32,4 +32,8 @@ li {
     gap: 1rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+}
+.left-icon {
+    width: 30px;
+    height: 30px;
 }
