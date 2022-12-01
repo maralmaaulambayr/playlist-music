@@ -1,5 +1,6 @@
 export * from './Header'
 export * from './LeftBar'
-export * from './RightBar'
 export * from './MainContent'
 export * from './PlaylistTile'
+export * from './Footer'
+export * from './Home'

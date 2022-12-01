@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { Home, MainContent } from "../components";
 
 export const ThemeContext = createContext({  });
 
@@ -14,7 +15,8 @@ export const ThemeProvider = ({children}) => {
   };
   return (
     <ThemeContext.Provider value={{ theme, changeDarkTheme, data: "string" }}>
-      {children}
+      <MainContent />
+      <Home />
     </ThemeContext.Provider>
   );
 };

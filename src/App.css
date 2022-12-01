@@ -54,7 +54,7 @@ button {
 
 .header-container {
   min-height: 1560px;
-  background: linear-gradient(180deg, #3333A3 5.09%, #121212 33.4%);
+  background: linear-gradient(180deg, #602B79 5.09%, #121212 33.4%);
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -97,4 +97,8 @@ button {
 .gap-20 {
   gap: 20px;
 }
-
+.footer-container {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
