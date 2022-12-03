@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { Home, MainContent } from "../components";
+import { Playlist } from "../components/Playlist";
 
 export const ThemeContext = createContext({  });
 
@@ -17,6 +18,7 @@ export const ThemeProvider = ({children}) => {
     <ThemeContext.Provider value={{ theme, changeDarkTheme, data: "string" }}>
       <MainContent />
       <Home />
+      <Playlist />
     </ThemeContext.Provider>
   );
 };

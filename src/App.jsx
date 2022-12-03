@@ -1,18 +1,19 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { MainContent, Home, LeftBar, Footer,Header } from "./common/components";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { MainContent, Home, Search } from "./common/components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Playlist } from "./common/components/Playlist";
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainContent />} />
-          <Route path="/" element={<Header />} />
-          <Route path="/" element={<LeftBar />} />
-          <Route path="/" element={<Footer />} />
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<MainContent />}>
+            <Route path="/Playlist" element={<Playlist />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/Search" element={<Search />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

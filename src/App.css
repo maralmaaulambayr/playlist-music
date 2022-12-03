@@ -26,6 +26,7 @@ button {
   grid-template-columns: 1fr 6fr ;
   background-color: #000000;
   color: aliceblue;
+
 }
 
 .flex {
