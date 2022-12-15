@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Albums } from "./Albums";
 import "./Chart.css";
 
-export const Chart = () => {
+export const Album= () => {
   return (
     <>
       {Albums &&

@@ -7,7 +7,7 @@ import { Outlet } from "react-router";
 export const Footer = () => {
   return (
     <>
-      <div className="footer-con">
+      <div className="footer-con2">
         <div className="play-btn-con">
           <FaStepBackward className="play-btns" />
           <FaPlayCircle className="play-btns" />

@@ -4,6 +4,10 @@ import axios from "axios";
 import "./MainContent.css";
 import { LeftBar } from "./LeftBar";
 import { Footer } from "./Footer";
+import { FaStepBackward } from "react-icons/fa";
+import { FaStepForward } from "react-icons/fa";
+import { FaPlayCircle } from "react-icons/fa";
+import "./Footer.css";
 
 export const MainContent = ({children}) => {
   const [data, setData] = useState([]);
@@ -46,7 +50,13 @@ export const MainContent = ({children}) => {
         </div>
       </div>
       <div className="footer-container">
-        <Footer />
+      <div className="footer-con2">
+        <div className="play-btn-con">
+          <FaStepBackward className="play-btns" />
+          <FaPlayCircle className="play-btns" />
+          <FaStepForward className="play-btns" />
+        </div>
+      </div>
       </div>
     </>
   );

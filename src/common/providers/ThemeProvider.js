@@ -15,7 +15,7 @@ export const ThemeProvider = ({children}) => {
     setTheme({ ...theme, palette: { dark: !theme.palette.dark } });
   };
   return (
-    <ThemeContext.Provider value={{ theme, changeDarkTheme, data: "string" }}>
+    <ThemeContext.Provider value={{children}}>
       <MainContent />
       <Home />
       <Playlist />

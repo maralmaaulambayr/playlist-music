@@ -3,8 +3,22 @@
     height: 100vh;
 }
 .chart-container {
-    height: 100px;
+    height: 300px;
     width: 100%;
     display: flex;
-    gap: 5%;
+    gap: 1.5%;
+    overflow: scroll;
+
+}
+.chart-container2 {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 1.5%;
+    overflow: scroll;
+}
+.album-cn {
+    margin-top: 2%;
 }
